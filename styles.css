@@ -20,7 +20,7 @@
     border: 2px solid #fff;
     width: 800px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .header-container {
@@ -35,6 +35,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.header-text {
+    align-self: flex-end;
+    margin-bottom: 20px;;
 }
 
 .header-item {

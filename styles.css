@@ -11,6 +11,8 @@
 .menu-container {
     display: flex;
     justify-content: center;
+    margin: auto;
+    padding: auto;
 
 }
 
@@ -18,5 +20,26 @@
     border: 2px solid #fff;
     width: 800px;
     display: flex;
+    justify-content: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    background-color: midnightblue;
+}
+
+.header{
+    width: 800px;
+    height: 200px;
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.header-item {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #fff;
+    
 }

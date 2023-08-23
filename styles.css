@@ -20,6 +20,11 @@ body {
     padding: 0 30px;
 }
 
+img {
+    max-width: 300px;
+    height: auto;
+    padding: 10px;
+}
 .menu {
     color: #fff;
     background-color: #021f46;
@@ -74,8 +79,25 @@ body {
 
 }
 
+.header button {
+    background-color: #227ee7;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #21bdcb;
+}
+
 .header img {
     max-width: 400px;
+    
 }
 
 .header .container {
@@ -84,27 +106,20 @@ body {
     justify-content: space-between;
 }
 
-.header-item {
-    display: flex;
-    justify-content: center;
-    
-}
-
-
 .main-body {
     display: flex;
     justify-content: center;
 }
 
 .main-body .container {
-    width: 900px;
-    height: 300px;
+    width: 1000px;
+    height: 400px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: row;
     align-items: center;
     margin: auto;
-    padding: 0px;
+    padding: 20px;
 }
 
 .boxes {
@@ -117,11 +132,7 @@ body {
     padding: 15px 20px;
 }
 
-img {
-    max-width: 300px;
-    height: auto;
-    padding: 10px;
-}
+
 
 @media(max-width: 768px) {
     .header .container {
@@ -132,7 +143,7 @@ img {
     
     .main-body .container {
         display: block;
-        text-align: center;
+        align-items: center;
     }
 }
 
@@ -143,9 +154,22 @@ img {
     
 }
 
+.second-body h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.second-body img {
+    max-height: 400px;
+    flex: 1;
+}
+
+
 .second-body .container {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .footer {

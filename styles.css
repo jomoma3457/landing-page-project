@@ -27,7 +27,6 @@ img {
 }
 .menu {
     color: #fff;
-    background-color: #021f46;
     padding: 20px 0;
 }
 
@@ -89,11 +88,21 @@ img {
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
+    
 }
 
-button:hover {
+button a:link {
+    color: rgb(255, 255, 255);
+}
+
+button a:visited {
+    color: #330a34;
+}
+
+button a:hover {
     color: #21bdcb;
 }
+
 
 .header img {
     max-width: 400px;
@@ -130,9 +139,12 @@ button:hover {
     margin: 20px 10px;
     box-shadow: 0 3px 5px rgb(0, 0, 0, 0.6);
     padding: 15px 20px;
+    text-align: center;
 }
 
-
+.boxes img, p {
+    
+} 
 
 @media(max-width: 768px) {
     .header .container {
@@ -142,6 +154,18 @@ button:hover {
     }
     
     .main-body .container {
+        display: block;
+        align-items: center;
+        max-width: 100%
+    }
+
+    .second-body .container {
+        flex-direction: column;
+        padding-top: 20px;
+        text-align:center;
+    }
+
+    .footer .container {
         display: block;
         align-items: center;
     }
@@ -173,19 +197,25 @@ button:hover {
 }
 
 .footer {
+    min-height: 70px;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.footer .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.footer-item {
-    border: 1px solid #fff;
-    background-color: #1f2937;
-    height: 200px;
-    flex: auto;
+.footer h4 {
+    font-size: medium;
 }
 
-.footer-one, .footer-three {
-    background-color: #5995da;
-    flex: initial;
-    width: 300px;
+footer a:link, a:visited {
+    color: #330a34;
+}
+
+footer a:hover, a:active {
+    color: #21bdcb;
 }
